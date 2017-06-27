@@ -5,10 +5,7 @@
 
 .list-group-item{
   height: 55px;
-}
-
-.list-group-item a {
-  padding-top: 5px;
+  line-height: 2.5;
 }
 
 .bins-share{
