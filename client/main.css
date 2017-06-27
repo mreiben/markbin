@@ -24,3 +24,13 @@
 .bins-share > div {
   margin: 0 10px;
 }
+
+.output-title{
+  margin-top: 32px;
+  margin-bottom: 30px;
+}
+
+.instructions{
+  font-style: italic;
+  text-align: center;
+}

@@ -12,10 +12,11 @@ class BinsList extends Component {
   renderList() {
     return this.props.bins.map(bin =>{
       const url = `/bins/${bin._id}`;
+      const binTitle = bin.title? bin.title : 'Untitled';
 
       return (
         <li className="list-group-item" key={bin._id}>
-          <Link to={url}>Bin: {bin.title}</Link>
+          <Link to={url}>Bin: {binTitle}</Link>
           <span className="pull-right">
             <button
               className="btn btn-danger"
@@ -30,9 +31,12 @@ class BinsList extends Component {
 
   render(){
     return (
-      <ul className="list-group">
-        {this.renderList()}
-      </ul>
+      <div>
+        <ul className="list-group">
+          {this.renderList()}
+        </ul>
+        <p className="instructions">Click 'Create Bin' above to get started, or open and edit an existing bin!</p>
+      </div>
     );
   };
 };

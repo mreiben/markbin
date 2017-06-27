@@ -14,7 +14,7 @@ class BinsEditor extends Component {
 
   render() {
     return (
-      <div className="col-xs-8">
+      <div className="col-xs-6">
         <h5>Bin Title</h5>
         <input
           value={this.props.bin.title}
